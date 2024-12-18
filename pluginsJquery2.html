@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.11.1/dist/sweetalert2.all.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.11.1/dist/sweetalert2.min.csss">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <style>
+        #botones{
+            width: 400px;
+            height: 200px;
+            background-color: beige;            
+            border:1px solid;
+            position:absolute;
+            top:50%;
+            left:50%;
+            transform:translate(-50%,-50%);          
+            margin:20px;
+            text-align: center;
+            align-content: center;
+        }
+        .btn{
+            width:100px;
+            padding:10px;            
+            background-color: chocolate;
+            color: white;
+            
+        }
+    </style>
+
+</head>
+<body>
+    <div id="botones">
+        <button class="btn uno">Ventana 1</button>
+        <button class="btn dos">Ventana 2</button>
+      
+    </div>
+
+    
+
+    <script>
+        $(function(){
+            $(".uno").click(function(){
+
+            Swal.fire({
+            title: "Buenos dias!",
+            text: "Haz click en el botón!",
+            icon: "success"
+                });
+
+            });
+            
+            $(".dos").click(function(){
+
+            Swal.fire({
+            icon: "error",
+            title: "Disculpe...",
+            text: "Desea ayuda!",
+            footer: '<a href="https://www.google.com.pe/">Desea ir a google?</a>'
+                });
+
+            });
+        })
+
+
+    </script>
+    
+</body>
+</html>

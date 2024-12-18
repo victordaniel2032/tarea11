@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+</head>
+<body>
+    <h1>Jquery</h1>
+    <p id="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae fugiat voluptas id natus. Rem ea beatae cupiditate accusamus ipsum architecto. Porro accusamus deserunt harum dolorum accusantium veniam, similique consectetur placeat!</p>
+    <button id="saluda">Saluda</button>
+    
+
+
+   
+    <script>
+        //1.sintaxis general $("selector").accion();
+       // $("h1").hide();
+
+       //2. Cuando el documento ha cargado ejecutar accion:
+/*        $(document).ready(function(){
+        $("h1").hide()
+       }) */
+
+       //3. Modo simplificado
+       $(function(){
+        $("h1").hide();
+       })
+
+       //4. funcion show y Css
+       $(function(){
+                    $("h1").show();
+                    $("h1").css({"color":"red" });
+                    $("h1").css({"text-align":"center" });
+                    $("#parrafo").css({"border":"1px solid red"})
+                   $("#saluda").click(function(){
+                    alert("Hola mundo");
+                   })
+
+                })
+
+       //
+
+
+    </script>
+</body>
+</html>
